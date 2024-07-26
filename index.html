@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html manifest="manifest.json">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文字表示ツール</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header">
+  <input type="text" id="inputField" oninput="updateText()">
+  <select id="fontSelect" onchange="updateText()">
+    <option value="sans-serif">Sans-serif</option>
+    <option value="serif">Serif</option>
+    <option value="monospace">Monospace</option>
+    <option value="'游ゴシック体', 'Yu Gothic', YuGothic, sans-serif">游ゴシック体</option>
+    <option value="'游明朝体', 'Yu Mincho', YuMincho, serif">游明朝体</option>
+    <option value="'BIZ UDPゴシック', 'BIZ UDPGothic', sans-serif">BIZ UDPゴシック</option>
+    <option value="'BIZ UDP明朝', 'BIZ UDPMincho', serif">BIZ UDP明朝</option>
+    <option value="'Noto Sans JP', sans-serif">Noto Sans JP</option>
+    <option value="'M PLUS Rounded 1c', sans-serif">M PLUS Rounded 1c</option>
+    <option value="'Kosugi Maru', sans-serif">Kosugi Maru</option>
+  </select>
+  <select id="fontSizeSelect" onchange="updateText()">
+    <option value="1">1em</option>
+    <option value="2">2em</option>
+    <option value="3" selected>3em</option>
+    <option value="4">4em</option>
+    <option value="5">5em</option>
+  </select>
+</div>
+
+<div id="content">
+  <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+</body>
+</html>
