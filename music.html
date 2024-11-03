@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Music</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .music-list {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .music-item {
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .music-item:last-child {
+      border-bottom: none;
+    }
+
+    .music-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .music-info {
+      color: #777;
+    }
+
+    .download-button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Free Music</h1>
+  </header>
+
+  <div class="music-list">
+    <div class="music-item">
+      <div class="music-title">Time is Ticking</div>
+      <div class="music-info">
+        <audio controls>
+          <source src="music/Time is Ticking.mp3" type="audio/mpeg">
+          ブラウザがオーディオタグをサポートしていません。
+        </audio>
+        <button class="download-button">ダウンロード</button>
+      </div>
+    </div>
+    <div class="music-item">
+      <div class="music-title">Lighting Nights</div>
+      <div class="music-info">
+        <audio controls>
+          <source src="music/Lighting Nights.mp3" type="audio/mpeg">
+          ブラウザがオーディオタグをサポートしていません。
+        </audio>
+        <button class="download-button">ダウンロード</button>
+      </div>
+    </div>
+    <div class="music-item">
+      <div class="music-title">Still, Time Stops</div>
+      <div class="music-info">
+        <audio controls>
+          <source src="music/Still, Time Stops.mp3" type="audio/mpeg">
+          ブラウザがオーディオタグをサポートしていません。
+        </audio>
+        <button class="download-button">ダウンロード</button>
+      </div>
+    </div>
+    <!-- その他の曲を追加 -->
+  </div>
+</body>
+</html>
